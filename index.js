@@ -21,6 +21,8 @@ navigator.mediaDevices.getUserMedia(constraints).then((stream) => {
 })
 
 function snap(){
+    canvas.width = 500;
+    canvas.height = 400;
     ctx.drawImage(webcamVideo, 0, 0, canvas.width, canvas.height);
     photos.push(canvas.toDataURL("image/png"))
 }
