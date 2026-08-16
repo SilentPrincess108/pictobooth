@@ -8,9 +8,18 @@
     <script src="index.js" defer></script>
 </head>
 <body>
-    <video id="webcam-video" autoplay></video>
-    <button onclick="snap()">Take Picture</button>
-    <canvas id="picture"></canvas>
-    <button id="download" onclick="download()">Download pic</button>
+    <header>
+        <h1>PICTOBOOTH</h1>
+    </header>
+    <div class="container">
+        <div id="leftside">
+            <video class="frame" id="webcam-video" autoplay></video>
+            <button onclick="snap()">Take Picture</button>
+        </div>
+        <div id="rightside">
+            <canvas class="frame" id="picture"></canvas>
+            <button id="download" onclick="download()">Download pic</button>
+        </div>
+    </div>
 </body>
 </html>
